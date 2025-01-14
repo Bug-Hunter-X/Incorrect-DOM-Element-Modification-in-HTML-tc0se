@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+
+  <script>
+    // Correct ways to select and modify the content of a div:
+    document.getElementById("myDiv").textContent = "New Text";
+    document.querySelector("#myDiv").innerText = "New Text";
+    document.querySelector("#myDiv").innerHTML = "<p><b>New Text</b></p>";
+  </script>
+</body>
+</html>
