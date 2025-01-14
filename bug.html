@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+
+  <script>
+    // Incorrect way to select and modify the content of div
+    document.getElementById("myDiv").textContent = "New Text"; //works
+    document.querySelector("#myDiv").innerText = "New Text"; //works
+    document.querySelector("#myDiv").innerHTML = "<p><b>New Text</b></p>"; //works
+
+    // Incorrect way: Trying to directly modify the content of div by assigning it a new value.
+    document.getElementById("myDiv") = "<p>This is incorrect.</p>";
+  </script>
+</body>
+</html>
