@@ -1,0 +1,3 @@
+# Incorrect DOM Element Modification
+
+This repository demonstrates a common mistake when working with the Document Object Model (DOM) in HTML.  It shows the incorrect way of modifying the content of a div element and the correct ways to do it. The error occurs when trying to directly assign a new string value to a DOM element, instead of correctly using properties like `innerHTML`, `textContent` or `innerText`.
